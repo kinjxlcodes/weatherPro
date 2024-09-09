@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecast</title>
+    <link href="./style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter City Name" spellcheck="false"/>
+            <button><img src="./images/search.png"/></button>
+        </div>
+        <div class="weather">
+            <img src="./images/clear.png" alt="" class="weather-icon">
+            <h1 class="temp">38°C</h1>
+            <h2 class="city">Delhi</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="./images/humidity.png"/>
+                    <div>
+                    <p class="humidity">60%</p>
+                    <p>Humidity</p>
+                    </div>
+                    
+                </div>
+                <div class="col">
+                    <img src="./images/wind.png"/>
+                    <div>
+                    <p class="wind">5.66 km/h</p>
+                    <p>Wind</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="background-music" autoplay loop>
+        <source src="./background.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="music-controls">
+        <button id="play-music">Play Music</button>
+        <button id="pause-music">Pause Music</button>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
